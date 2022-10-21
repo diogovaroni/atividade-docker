@@ -30,9 +30,17 @@ docker run --name=servidor-mysql -p3306:3306 -v mysql-volume:/var/lib/mysql -e M
 ### Comando para verificar o Status do Processo
 docker ps
 
-### Comandos para se conectar ao servidor MySQL dentro do Container
+### Comandos para entrar no Container
 docker exec -it servidor-mysql bash
+
+### Comandos para se conectar ao servidor MySQL de dentro do container
 mysql -u root -p
+
+### Comando para se conectar ao MySQL a partir da máquina local
+update mysql.user set host='%' where user='root';
+
+### Comando para que as alterações no usuário root tenham efeito
+FLUSH PRIVILEGES;
 
 ### Teste do Servidor MySQL criado. Comando para criar uma tabela
 CREATE DATABASE TESTE_DEVOPS;
