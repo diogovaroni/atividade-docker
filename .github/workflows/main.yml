@@ -1,0 +1,2 @@
+name: Build e push de imagens do Docker 
+usam: docker/build-push-action@v3.2.0
