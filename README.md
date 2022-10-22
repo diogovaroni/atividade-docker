@@ -12,5 +12,5 @@ Importante:
 
 a. O conteiner tem de estar plenamente funcional (SO + MySql + Qualquer outro elemento necessário)
 
-Alunos: Diogo Varoni, Daniel de Oliveira, Lucas Nathan, Mateus dos Anjos
+
 
